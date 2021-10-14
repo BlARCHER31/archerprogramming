@@ -3,7 +3,6 @@
 .hero {
   align-items: center;
   background-attachment: fixed;
-  background-color: #000;
   background-image: url('../src/images/background.jpg');
   background-position: center;
   background-size: cover;
@@ -38,6 +37,20 @@
   margin-top: 10rem;
 }
 
+@media screen and (max-width: 750px) {
+  .profile-pic {
+    display: none;
+  }
+  .hero {
+    text-align: center;
+    display: flex;
+    height: 40vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 /* About Me */
 
 .about-me {
@@ -60,19 +73,25 @@
   font-weight: 300;
 }
 
-/* Tech Stack */
+/* skill Stack */
 
-.tech-stack {
+.skill-stack {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-content: center;
 }
 
-.tech-card {
+.skill-card {
+  justify-items: center;
   margin: 0.5rem;
-  background: #2d4353;
   padding: 3rem;
-  border: 0.2rem solid #3874a7;
+  background: #2d4353;
+  border: 0.2rem solid #f1f1f1;
   text-align: center;
+  color: #000;
+}
+
+.skill-card > p {
+  width: 65.5px;
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import TechStack from './techStack'
+import Skills from './skills'
 
 const AboutMe = () => {
   return (
@@ -12,9 +12,9 @@ const AboutMe = () => {
             May of 2020 and I have taken to it very quickly. I love and am very
             passionate about coding.
           </p>
-          <h4>Technology Stack</h4>
+          <h4>Skills</h4>
         </div>
-        <TechStack />
+        <Skills size={46} />
       </div>
     </div>
   )
