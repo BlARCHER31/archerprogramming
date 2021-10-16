@@ -58,6 +58,9 @@
   font-family: 'Roboto Condensed', sans-serif;
   color: white;
   padding-top: 4rem;
+  padding-bottom: 4rem;
+  box-shadow: 0rem 0.5rem 0.3rem #3874a7;
+  margin-bottom: 0.3rem;
 }
 
 .about-description {
@@ -94,4 +97,31 @@
 
 .skill-card > p {
   width: 65.5px;
+}
+
+/* Footer */
+
+.footer {
+  height: 20vh;
+  background: #000;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.footer h5 {
+  text-align: center;
+}
+
+.footer a {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 392px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }
