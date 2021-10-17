@@ -21,15 +21,12 @@ const NavBar = ({ user }) => {
         </button>
         <div className='collapse navbar-collapse ' id='navbarNav'>
           <ul className='navbar-nav ms-auto'>
-            <Link className='nav-link' aria-current='page' to='/prices'>
+            <a className='nav-link' aria-current='page' href='#about-me'>
               About Me
-            </Link>
-            <Link className='nav-link' aria-current='page' to='/prices'>
+            </a>
+            <a className='nav-link' aria-current='page' href='#projects'>
               Projects
-            </Link>
-            <Link className='nav-link' aria-current='page' to='/prices'>
-              Contact Me
-            </Link>
+            </a>
           </ul>
         </div>
       </div>
