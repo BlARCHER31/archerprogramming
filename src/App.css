@@ -141,6 +141,10 @@
   align-items: center;
 }
 
+.project-name {
+  text-decoration: underline;
+}
+
 .project-media {
   width: 100%;
 }
@@ -160,7 +164,8 @@
 }
 
 @media screen and (max-width: 750px) {
-  .projects {
+  .project-odd,
+  .project-even {
     display: flex;
     flex-direction: column-reverse;
   }

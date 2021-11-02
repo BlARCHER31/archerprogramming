@@ -31,7 +31,7 @@ const Project = () => {
         ></video>
         <div className='project-information'>
           <h5 className='featured-project'>Featured Project</h5>
-          <h6 className='projectName'>TeamFight Tactics Summoner Info</h6>
+          <h6 className='project-name'>TeamFight Tactics Summoner Info</h6>
           <p className='project-description'>
             An app that allows you to type in a Summoner Name and retrieve Match
             History for your summoner from the RIOT GAMES API.
@@ -49,7 +49,7 @@ const Project = () => {
       </div>
       <div className='project-even'>
         <div className='project-information'>
-          <h6 className='projectName'>The Darren Welker Servant Heart Fund</h6>
+          <h6 className='project-name'>The Darren Welker Servant Heart Fund</h6>
           <p className='project-description'>
             Perhaps the project I am most proud of because of the meaning behind
             it. Thanks to the skills that I have picked up learning web
@@ -70,7 +70,7 @@ const Project = () => {
       <div className='project-odd'>
         <img className='project-media' src={C2K}></img>
         <div className='project-information'>
-          <h6 className='projectName'>C2K Defense</h6>
+          <h6 className='project-name'>C2K Defense</h6>
           <p className='project-description'>
             Another WordPress website built from scratch. This was a paid
             opportunity that I was happy to do and get some real world
