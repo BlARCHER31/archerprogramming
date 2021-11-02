@@ -5,7 +5,11 @@ const Footer = () => {
   const size = 42
   return (
     <div className='footer'>
-      <p>Created By Blake Archer</p>
+      <div>
+        <p>Created By Blake Archer</p>
+        <p id='contact-me'>blarcher31@gmail.com</p>
+      </div>
+
       <div className='follow-me'>
         <h5>Follow Me</h5>
         <a href='https://github.com/blarcher31'>

@@ -125,10 +125,19 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.projects {
-  margin-top: 4rem;
+.project-odd {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+.project-even {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   align-items: center;
 }
 
