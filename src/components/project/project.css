@@ -15,6 +15,7 @@
 .project-media {
   display: none;
   transition: transform 0.2s;
+  box-shadow: 4px 4px 6px #202022;
 }
 
 .project-media:hover {
@@ -37,6 +38,8 @@
     column-gap: 1rem;
     align-content: center;
     grid-template-columns: repeat(2, 1fr);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   .project-media {
     display: block;

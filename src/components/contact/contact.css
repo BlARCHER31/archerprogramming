@@ -1,0 +1,10 @@
+.contact > .title {
+  font-weight: lighter;
+  color: #f1f1f1;
+  text-align: center;
+  margin-right: 0;
+  margin-bottom: 2rem;
+}
+.contact {
+  padding: 2rem 2rem;
+}

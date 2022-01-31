@@ -1,0 +1,18 @@
+.skill-card {
+  justify-items: center;
+  margin: 0.5rem;
+  padding: 3rem;
+  background: #2d4353;
+  border: 0.2rem solid #f1f1f1;
+  text-align: center;
+  transition: transform 0.2s;
+  color: #000;
+}
+
+.skill-card:hover {
+  transform: scale(1.5);
+}
+
+.skill-card > p {
+  width: 65.5px;
+}

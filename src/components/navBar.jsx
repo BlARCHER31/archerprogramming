@@ -27,8 +27,8 @@ const NavBar = ({ user }) => {
             <a className='nav-link' aria-current='page' href='#projects'>
               Projects
             </a>
-            <a className='nav-link' aria-current='page' href='#contact-me'>
-              Contact Me
+            <a className='nav-link' aria-current='page' href='#contact'>
+              Contact
             </a>
           </ul>
         </div>

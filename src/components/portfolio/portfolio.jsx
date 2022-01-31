@@ -14,6 +14,7 @@ import {
 } from 'react-icons/fa'
 import { SiExpress } from 'react-icons/si'
 import Project from '../project/project'
+import './portfolio.css'
 
 const Portfolio = () => {
   const normalSize = 42
@@ -35,64 +36,67 @@ const Portfolio = () => {
   experience with.`
 
   return (
-    <div className='container'>
-      <Project
-        featured={true}
-        source={crypto}
-        title={'Crypto Portfolio Tracker'}
-        description={cryptoDescription}
-        siteLink={'https://crypto-portfolio.archerprogramming.com/'}
-        gitHubLink={`https://github.com/BlARCHER31/crypto-currency-tracker`}
-        size={normalSize}
-        techStack={[
-          <FaReact size={smallSize} />,
-          <FaNodeJs size={smallSize} />,
-          <SiExpress size={smallSize} />,
-          <FaHtml5 size={smallSize} />,
-          <FaCss3 size={smallSize} />,
-        ]}
-      />
-      <Project
-        featured={false}
-        source={tft}
-        title={'TeamFight Tactics Stat Tracker'}
-        description={tftDescription}
-        gitHubLink={`https://github.com/BlARCHER31/tft-match-history-ui`}
-        size={normalSize}
-        techStack={[
-          <FaReact size={smallSize} />,
-          <FaNodeJs size={smallSize} />,
-          <SiExpress size={smallSize} />,
-          <FaHtml5 size={smallSize} />,
-          <FaCss3 size={smallSize} />,
-        ]}
-      />
-      <Project
-        featured={false}
-        source={DWSHFImage}
-        title={'The Darren Welker Servant Heart Fund'}
-        description={dwshfDescription}
-        siteLink={'https://darrenwelkerservantheartfund.org/'}
-        size={normalSize}
-        techStack={[
-          <FaWordpress size={smallSize} />,
-          <FaHtml5 size={smallSize} />,
-          <FaCss3 size={smallSize} />,
-        ]}
-      />
-      <Project
-        featured={false}
-        source={C2K}
-        title={'C2K Defense'}
-        description={c2kDefenseDesctiption}
-        siteLink={'https://c2kdefense.com/'}
-        size={normalSize}
-        techStack={[
-          <FaWordpress size={smallSize} />,
-          <FaHtml5 size={smallSize} />,
-          <FaCss3 size={smallSize} />,
-        ]}
-      />
+    <div id='projects' className='portfolio'>
+      <div className='container'>
+        <h3 className='title'>Project Portfolio</h3>
+        <Project
+          featured={true}
+          source={crypto}
+          title={'Crypto Portfolio Tracker'}
+          description={cryptoDescription}
+          siteLink={'https://crypto-portfolio.archerprogramming.com/'}
+          gitHubLink={`https://github.com/BlARCHER31/crypto-currency-tracker`}
+          size={normalSize}
+          techStack={[
+            <FaReact size={smallSize} />,
+            <FaNodeJs size={smallSize} />,
+            <SiExpress size={smallSize} />,
+            <FaHtml5 size={smallSize} />,
+            <FaCss3 size={smallSize} />,
+          ]}
+        />
+        <Project
+          featured={false}
+          source={tft}
+          title={'TeamFight Tactics Stat Tracker'}
+          description={tftDescription}
+          gitHubLink={`https://github.com/BlARCHER31/tft-match-history-ui`}
+          size={normalSize}
+          techStack={[
+            <FaReact size={smallSize} />,
+            <FaNodeJs size={smallSize} />,
+            <SiExpress size={smallSize} />,
+            <FaHtml5 size={smallSize} />,
+            <FaCss3 size={smallSize} />,
+          ]}
+        />
+        <Project
+          featured={false}
+          source={DWSHFImage}
+          title={'The Darren Welker Servant Heart Fund'}
+          description={dwshfDescription}
+          siteLink={'https://darrenwelkerservantheartfund.org/'}
+          size={normalSize}
+          techStack={[
+            <FaWordpress size={smallSize} />,
+            <FaHtml5 size={smallSize} />,
+            <FaCss3 size={smallSize} />,
+          ]}
+        />
+        <Project
+          featured={false}
+          source={C2K}
+          title={'C2K Defense'}
+          description={c2kDefenseDesctiption}
+          siteLink={'https://c2kdefense.com/'}
+          size={normalSize}
+          techStack={[
+            <FaWordpress size={smallSize} />,
+            <FaHtml5 size={smallSize} />,
+            <FaCss3 size={smallSize} />,
+          ]}
+        />
+      </div>
     </div>
   )
 }
