@@ -1,8 +1,8 @@
 import AboutMe from './components/about'
-import Footer from './components/footer'
+import Footer from './components/footer/footer'
 import Hero from './components/hero'
 import NavBar from './components/navBar'
-import Project from './components/project'
+import Portfolio from './components/portfolio/portfolio'
 import './App.css'
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <Hero />
       <div className='content'>
         <AboutMe />
-        <Project />
+        <Portfolio />
       </div>
       <Footer />
     </div>

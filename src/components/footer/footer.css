@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  min-height: 20vh;
+  background: #000;
+}
+
+.footer h5 {
+  text-align: center;
+}
+
+.footer a {
+  padding: 1rem;
+}
+
+@media screen and (min-width: 400px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

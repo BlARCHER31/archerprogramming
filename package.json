@@ -1,5 +1,6 @@
 {
   "name": "archerprogramming",
+  "homepage": "https://archerprogramming.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

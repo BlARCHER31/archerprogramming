@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import './footer.css'
 
 const Footer = () => {
   const size = 42
