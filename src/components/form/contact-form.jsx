@@ -58,7 +58,7 @@ const Form = () => {
         <input
           type='hidden'
           name='_next'
-          value='http://localhost:3000/'
+          value='https://archerprogramming.com/'
         ></input>
         <Button name={'primary-btn'} label={'Submit'} />
       </form>
