@@ -5,6 +5,7 @@ import NavBar from './components/navBar'
 import Portfolio from './components/portfolio/portfolio'
 import Contact from './components/contact/contact'
 import './App.css'
+import Skills from './components/skill/skills'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <div className='content'>
         <AboutMe />
+        <Skills />
         <Portfolio />
         <Contact />
       </div>

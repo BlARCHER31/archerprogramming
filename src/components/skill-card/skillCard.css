@@ -2,11 +2,11 @@
   justify-items: center;
   margin: 0.5rem;
   padding: 3rem;
-  background: #2d4353;
-  border: 0.2rem solid #f1f1f1;
+  background: #084094;
+  /* border: 0.2rem solid #f1f1f1; */
   text-align: center;
   transition: transform 0.2s;
-  color: #000;
+  color: #fff;
 }
 
 .skill-card:hover {
