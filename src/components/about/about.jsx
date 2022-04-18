@@ -4,8 +4,7 @@ import './about.css'
 const AboutMe = () => {
   return (
     <div className='about'>
-      <div className='container'>
-        <h4 id='about-me' className='title'>
+        <h4 id='about-me' className='title about-title'>
           About Me
         </h4>
         <p>
@@ -19,7 +18,6 @@ const AboutMe = () => {
           try to dive deep into different technical podcasts and technical books
           to help me with that. <br />
         </p>
-      </div>
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import rihDemo from './videos/Repurposed In Him Demo_Trim.mp4'
+import cryptoDemo from './videos/crypto-portfolio-demo.mp4'
 import tft from './images/tft.png'
 import crypto from './images/crypto.png'
 import DWSHFImage from './images/DWSHF.png'
@@ -58,7 +59,11 @@ const Portfolio = () => {
         </div>
         <Project
           featured={false}
-          media={<img className='project-media' src={crypto}></img>}
+          media={
+            <video className='project-media' controls>
+              <source src={cryptoDemo} />
+            </video>
+          }
           title={'Crypto Portfolio Tracker'}
           description={cryptoDescription}
           siteLink={'https://crypto-portfolio.archerprogramming.com/'}

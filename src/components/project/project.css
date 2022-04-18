@@ -13,13 +13,10 @@
 }
 
 .project-media {
-  display: none;
-  transition: transform 0.2s;
+  /* display: none; */
+  width: 100%;
   box-shadow: 4px 4px 6px #202022;
-}
-
-.project-media:hover {
-  transform: scale(1.5);
+  order: 2;
 }
 
 .project-information {
@@ -31,7 +28,7 @@
   font-size: 300;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   .project {
     margin-top: 1rem;
     display: grid;
@@ -44,6 +41,7 @@
   .project-media {
     display: block;
     width: 100%;
+    order: unset;
   }
   .project:nth-of-type(even) .project-media {
     order: 2;
