@@ -26,6 +26,6 @@ code {
     monospace;
 }
 
-.navbar {
-  background-color: #000 !important;
+a {
+  text-decoration: none;
 }

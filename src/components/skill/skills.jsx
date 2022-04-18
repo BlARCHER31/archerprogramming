@@ -10,7 +10,9 @@ const Skills = () => {
   const size = 46
   return (
     <div>
-      <h3 className='title'>Skills</h3>
+      <h3 className='title' id='skills'>
+        Skills
+      </h3>
       <div className='skill-stack'>
         <SkillCard icon={<FaReact size={size} />} label={'React'} />
         <SkillCard

@@ -1,13 +1,29 @@
+p {
+  font-size: 0.8rem;
+}
+
 .content {
   font-family: 'Roboto Mono', monospace;
   color: #f1f1f1;
+  max-width: 950px;
+  margin: auto;
   /* box-shadow: 0rem 0.5rem 0.3rem #3874a7; */
   /* margin-bottom: 0.3rem; */
 }
 
 .title {
-  font-size: 5rem;
+  font-size: 2rem;
   text-decoration: #252527 underline;
   font-weight: 300;
   text-align: center;
 }
+
+@media screen and(min-width: 700px) {
+  .title {
+    font-size: 5rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+}
+
