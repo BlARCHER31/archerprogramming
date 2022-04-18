@@ -1,18 +1,11 @@
 import React from 'react'
+import rihDemo from './videos/Repurposed In Him Demo_Trim.mp4'
 import tft from './images/tft.png'
 import crypto from './images/crypto.png'
 import DWSHFImage from './images/DWSHF.png'
-import C2K from './images/C2K.png'
 
-import {
-  FaCss3,
-  FaGithub,
-  FaHtml5,
-  FaNodeJs,
-  FaReact,
-  FaWordpress,
-} from 'react-icons/fa'
-import { SiExpress } from 'react-icons/si'
+import { FaCss3, FaHtml5, FaNodeJs, FaReact, FaWordpress } from 'react-icons/fa'
+import { SiExpress, SiMysql, SiMongodb } from 'react-icons/si'
 import Project from '../project/project'
 import './portfolio.css'
 
@@ -31,17 +24,41 @@ const Portfolio = () => {
   deploy this website for my family's non-profit from scratch using
   WordPress.`
 
-  const c2kDefenseDesctiption = `Another WordPress website built from scratch. This was a paid
-  opportunity that I was happy to do and get some real world
-  experience with.`
+  const rihDescription = `This website is currently just a basis for a future custom wooden sign business.
+  My wife and her family began doing this a while back to raise money for mission trips. She plans on 
+  using the skills she has picked up along the way to open her own business. In preparation for it, I decided
+  to test and show off my Full Stack capabilities. `
 
   return (
     <div id='projects' className='portfolio'>
       <div className='container'>
         <h3 className='title'>Project Portfolio</h3>
+        <div className='featured-project-section'>
+          <Project
+            featured={true}
+            media={
+              <video className='project-media' controls>
+                <source src={rihDemo} />
+              </video>
+            }
+            title={'Ecommerce Website'}
+            description={rihDescription}
+            siteLink={'https://rih.archerprogramming.com/'}
+            gitHubLink={`https://github.com/BlARCHER31/dev-website-frontend`}
+            size={normalSize}
+            techStack={[
+              <FaReact size={smallSize} />,
+              <FaNodeJs size={smallSize} />,
+              <SiExpress size={smallSize} />,
+              <FaHtml5 size={smallSize} />,
+              <FaCss3 size={smallSize} />,
+              <SiMysql size={smallSize} />,
+            ]}
+          />
+        </div>
         <Project
-          featured={true}
-          source={crypto}
+          featured={false}
+          media={<img className='project-media' src={crypto}></img>}
           title={'Crypto Portfolio Tracker'}
           description={cryptoDescription}
           siteLink={'https://crypto-portfolio.archerprogramming.com/'}
@@ -53,11 +70,12 @@ const Portfolio = () => {
             <SiExpress size={smallSize} />,
             <FaHtml5 size={smallSize} />,
             <FaCss3 size={smallSize} />,
+            <SiMongodb size={smallSize} />,
           ]}
         />
         <Project
           featured={false}
-          source={tft}
+          media={<img className='project-media' src={tft}></img>}
           title={'TeamFight Tactics Stat Tracker'}
           description={tftDescription}
           gitHubLink={`https://github.com/BlARCHER31/tft-match-history-ui`}
@@ -72,23 +90,10 @@ const Portfolio = () => {
         />
         <Project
           featured={false}
-          source={DWSHFImage}
+          media={<img className='project-media' src={DWSHFImage}></img>}
           title={'The Darren Welker Servant Heart Fund'}
           description={dwshfDescription}
           siteLink={'https://darrenwelkerservantheartfund.org/'}
-          size={normalSize}
-          techStack={[
-            <FaWordpress size={smallSize} />,
-            <FaHtml5 size={smallSize} />,
-            <FaCss3 size={smallSize} />,
-          ]}
-        />
-        <Project
-          featured={false}
-          source={C2K}
-          title={'C2K Defense'}
-          description={c2kDefenseDesctiption}
-          siteLink={'https://c2kdefense.com/'}
           size={normalSize}
           techStack={[
             <FaWordpress size={smallSize} />,

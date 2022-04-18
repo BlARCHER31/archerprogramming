@@ -1,4 +1,18 @@
 body {
+  background-image: linear-gradient(
+    60deg,
+    hsl(0deg 0% 0%) 0%,
+    hsl(344deg 0% 4%) 11%,
+    hsl(344deg 0% 7%) 24%,
+    hsl(344deg 0% 10%) 37%,
+    hsl(344deg 0% 12%) 50%,
+    hsl(344deg 0% 14%) 62%,
+    hsl(344deg 0% 17%) 72%,
+    hsl(344deg 0% 19%) 81%,
+    hsl(344deg 0% 22%) 89%,
+    hsl(344deg 0% 24%) 95%,
+    hsl(0deg 0% 27%) 100%
+  );
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

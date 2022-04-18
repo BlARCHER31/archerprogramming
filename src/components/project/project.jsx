@@ -4,7 +4,7 @@ import './project.css'
 
 const Project = ({
   featured,
-  source,
+  media,
   title,
   description,
   techStack,
@@ -14,7 +14,7 @@ const Project = ({
 }) => {
   return (
     <div className='project'>
-      <img className='project-media' src={source}></img>
+      {media}
 
       <div className='project-information'>
         {featured ? (

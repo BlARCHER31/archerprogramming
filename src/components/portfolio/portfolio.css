@@ -1,3 +1,8 @@
 .portfolio {
   margin-top: 4rem;
 }
+
+
+.featured-project-section {
+  display: flex;
+}
